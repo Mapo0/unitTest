@@ -28,14 +28,7 @@ class MethodsTest {
     void summStr()  {
         assertEquals(resstrs,methods.summStr(str1,str2));
     }
-
-    @AfterAll
-    static void end(){
-        str1="";
-        str2="";
-        resstrs="";
-    }
-
+    
     @org.junit.jupiter.api.Test
     void factorial() {
         int factorial = methods.factorial();
