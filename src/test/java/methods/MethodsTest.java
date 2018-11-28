@@ -1,5 +1,6 @@
 package methods;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -51,7 +52,7 @@ class MethodsTest {
             assertEquals(result, actional);
             }
 
-    @Test
+    @Ignore
     void timeOut(){
         assertTimeout(ofMillis(2), () ->{
           methods.factorial();
