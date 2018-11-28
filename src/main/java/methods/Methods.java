@@ -1,11 +1,8 @@
 package methods;
 
 public class Methods {
-    public String summStr (){
-        String str1 = "asd";
-        String str2 = "vac";
-        str1 += str2;
-       return str1;
+    public String summStr (String str1, String str2 ){
+        return  str1+str2;
     }
     public int factorial (){
         int a=1;

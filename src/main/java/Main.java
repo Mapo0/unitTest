@@ -6,7 +6,8 @@ public class Main {
 
 
         System.out.println("\n Сумма строк");
-        System.out.println(methods.summStr());
+        String str = methods.summStr("sad", "boy" );
+        System.out.println(str);
 
         System.out.println("\n Факториал 5 ");
         System.out.println(methods.factorial());
