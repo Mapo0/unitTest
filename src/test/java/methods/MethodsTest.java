@@ -1,6 +1,5 @@
 package methods;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,14 +20,28 @@ class MethodsTest {
     }
     @org.junit.jupiter.api.Test
     void notNull(){
-        assertNotNull(methods.summStr(str1,str2),  "Проверка на null");
+        assertNotNull(methods.summStr(str1,str2));
     }
+
+    @org.junit.jupiter.api.Test
+    void empty(){
+        assertFalse(str1.equals(""));
+        assertFalse(str2.equals(""));
+
+    }
+    @org.junit.jupiter.api.Test
+    void nonLatin(){
+        String str = methods.summStr(str1,str2);
+        assertTrue(str.matches("^[a-zA-Z0-9]+$"));
+    }
+
+
 
     @org.junit.jupiter.api.Test
     void summStr()  {
         assertEquals(resstrs,methods.summStr(str1,str2));
     }
-    
+
     @org.junit.jupiter.api.Test
     void factorial() {
         int factorial = methods.factorial();
