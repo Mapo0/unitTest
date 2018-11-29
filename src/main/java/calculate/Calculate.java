@@ -3,9 +3,9 @@ package calculate;
 import java.util.Scanner;
 
 public class Calculate {
-    static Scanner scanner = new Scanner(System.in);
+     Scanner scanner = new Scanner(System.in);
 
-    public static int getInt() {
+    public  int getInt() {
         System.out.println("Введите число:");
         int num;
         if (scanner.hasNextInt()) {
@@ -18,7 +18,7 @@ public class Calculate {
         return num;
     }
 
-    public static char getOperation() {
+    public  char getOperation() {
         System.out.println("Выберите операцию");
         char operation;
         if (scanner.hasNext()) {
@@ -31,7 +31,7 @@ public class Calculate {
         return operation;
     }
 
-    public static int calculate(int num1, int num2, char operation) {
+    public  int calculate(int num1, int num2, char operation) {
         int result;
         switch (operation) {
             case '+':
