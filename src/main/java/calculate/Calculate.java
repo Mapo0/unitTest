@@ -4,10 +4,8 @@ import java.util.Scanner;
 
 public class Calculate {
     Scanner scanner = new Scanner(System.in);
-    Enter enter = new Enter();
-    Operation operation = new Operation();
 
-    public   int getInt() {
+    private    int getInt() {
         System.out.println("Введите число:");
         int num;
         if (scanner.hasNextInt()) {
@@ -20,7 +18,7 @@ public class Calculate {
         return num;
     }
 
-    public char getOperation() {
+    private char getOperation() {
         System.out.println("Выберите операцию");
         char operation;
         if (scanner.hasNext()) {

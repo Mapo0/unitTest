@@ -32,5 +32,10 @@ public class CalculateTest {
         assertEquals(result, 2);
     }
 
+    @Test
+    void  getIntTest(){
+        
+
+    }
 
 }

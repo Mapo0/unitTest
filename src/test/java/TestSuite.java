@@ -7,6 +7,7 @@ import org.junit.runners.JUnit4;
 import org.junit.runners.Suite;
 
 @RunWith(JUnitPlatform.class)
-@Suite.SuiteClasses({CalculateTest.class , MethodsTest.class})
+@Suite.SuiteClasses({CalculateTest.class ,
+                        MethodsTest.class})
 public class TestSuite {
 }
