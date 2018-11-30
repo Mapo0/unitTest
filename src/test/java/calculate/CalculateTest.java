@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculateTest {
+public class CalculateTest {
 
     Calculate calculate = new Calculate();
     @Test
@@ -31,5 +31,6 @@ class CalculateTest {
         int result =calculate.calculate(5,3,'-') ;
         assertEquals(result, 2);
     }
+
 
 }

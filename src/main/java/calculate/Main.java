@@ -4,6 +4,8 @@ package calculate;
 public class Main {
 
     private static Calculate calculate=new Calculate();
+    private static Operation operation = new Operation();
+    private static Enter enter = new Enter();
 
     public static void main(String[] args) {
         int num1 =calculate.getInt();

@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-class MethodsTest {
+public class MethodsTest {
     static String str1;
     static String str2;
     static String resstrs;
@@ -33,7 +32,6 @@ class MethodsTest {
     void empty() {
         assertFalse(str1.equals(""));
         assertFalse(str2.equals(""));
-
     }
 
     @Test
@@ -56,9 +54,9 @@ class MethodsTest {
     }
 
     @Ignore
-    //@Test
+       //@Test
     void timeOut() {
-       assertTimeout(Duration.ofMillis(2), () -> {
+        assertTimeout(Duration.ofMillis(2), () -> {
             methods.factorial();
         });
     }

@@ -3,9 +3,11 @@ package calculate;
 import java.util.Scanner;
 
 public class Calculate {
-     Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
+    Enter enter = new Enter();
+    Operation operation = new Operation();
 
-    public  int getInt() {
+    public   int getInt() {
         System.out.println("Введите число:");
         int num;
         if (scanner.hasNextInt()) {
@@ -18,7 +20,7 @@ public class Calculate {
         return num;
     }
 
-    public  char getOperation() {
+    public char getOperation() {
         System.out.println("Выберите операцию");
         char operation;
         if (scanner.hasNext()) {
@@ -31,7 +33,7 @@ public class Calculate {
         return operation;
     }
 
-    public  int calculate(int num1, int num2, char operation) {
+    public int calculate(int num1, int num2, char operation) {
         int result;
         switch (operation) {
             case '+':
@@ -46,9 +48,9 @@ public class Calculate {
             case '/':
                 result = num1 / num2;
                 break;
-                default:
-                    System.out.print("введите операцию заново");
-                    result = calculate(num1, num2, getOperation());
+            default:
+                System.out.print("введите операцию заново");
+                result = calculate(num1, num2, getOperation());
 
         }
 
