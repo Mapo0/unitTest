@@ -1,7 +1,11 @@
 package calculate;
 
+import javafx.scene.layout.Priority;
 import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,10 +36,5 @@ public class CalculateTest {
         assertEquals(result, 2);
     }
 
-    @Test
-    void  getIntTest(){
-        
-
-    }
 
 }

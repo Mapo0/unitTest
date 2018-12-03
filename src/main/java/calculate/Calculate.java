@@ -3,9 +3,13 @@ package calculate;
 import java.util.Scanner;
 
 public class Calculate {
+    int num1 =getInt();
+    int num2 = getInt();
+    char operation = getOperation();
+    int result = calculate(num1,num2,operation);
     Scanner scanner = new Scanner(System.in);
 
-    private    int getInt() {
+    private int getInt() {
         System.out.println("Введите число:");
         int num;
         if (scanner.hasNextInt()) {

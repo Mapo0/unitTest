@@ -1,13 +1,9 @@
 package calculate;
 
-
 public class Main {
 
     public static void main(String[] args) {
-////        int num1 =calculate.getInt();
-////        int num2 = calculate.getInt();
-////        char operation = calculate.getOperation();
-////        int result = calculate.calculate(num1,num2,operation);
-//        System.out.println("Результат операции: "+result);
+        Calculate calculate = new Calculate();
+        System.out.println("Результат операции: "+calculate.result);
     }
 }
